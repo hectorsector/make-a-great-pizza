@@ -1,0 +1,17 @@
+title: make a great pizza
+tagline: A brand new course on Learning Lab
+description: 'No matter which way you slice it or dice it, this is the best pizza.'
+template:
+  repo: make-a-great-pizza-template
+  name: make-a-great-pizza
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
